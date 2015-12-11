@@ -8,7 +8,7 @@ var Mask = require('./mask')
 
 module.exports = function CircleBounce (data) {
   return function render (time) {
-    var mask = Mask(renderInner(data.radius,  time))
+    var mask = Mask(renderInner(data.radius, time))
     var outer = renderOuter(data.radius, time, data.fill, mask.id)
 
     var options = Size({x: data.radius * 2, y: data.radius * 2})
@@ -42,5 +42,5 @@ function renderOuter (radius, time, fill, mask) {
 }
 
 function curve (value) {
-  return bezier(.10, 0.45, .9, .45).get(value)
+  return bezier(0.10, 0.45, 0.9, 0.45).get(value)
 }

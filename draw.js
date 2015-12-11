@@ -3,8 +3,6 @@
 var Circle = require('./')
 var vdom = require('virtual-dom')
 var Loop = require('raf-loop')
-var pipe = require('value-pipe')
-var get = require('value-get')
 
 var time = 0
 var circle = Circle({radius: 10, fill: 'white'})
@@ -24,8 +22,6 @@ var loop = Loop(function (delta) {
 })
 
 loop.start()
-
-var h = require('virtual-dom')
 
 function render () {
   var button = {
