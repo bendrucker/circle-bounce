@@ -21,7 +21,7 @@ module.exports = function CircleBounce (data) {
 }
 
 function renderInner (radius, time) {
-  var coefficient = curve(time < 0.5 ? time : 1 - time)
+  var coefficient = 0.95 * curve(time < 0.5 ? time : 1 - time)
 
   return Circle({
     radius: radius * coefficient,
