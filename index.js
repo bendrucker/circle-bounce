@@ -6,7 +6,9 @@ var Size = require('create-svg-size')
 var Circle = require('./circle')
 var Mask = require('./mask')
 
-module.exports = function CircleBounce (data) {
+module.exports = Circles
+
+function Circles (data) {
   return function render (time) {
     var mask = Mask(renderInner(data.radius, time))
     var outer = renderOuter(data.radius, time, data.fill, mask.id)
