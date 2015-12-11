@@ -11,7 +11,8 @@
     "url": "bendrucker.me"
   },
   "scripts": {
-    "test": "standard && tape test.js"
+    "test": "standard && tape test.js",
+    "open": "budo draw.js"
   },
   "keywords": [
     "bounce",
@@ -19,6 +20,7 @@
     "animate"
   ],
   "devDependencies": {
+    "budo": "~7.0.2",
     "standard": "^5.0.0",
     "tape": "^4.0.0"
   },
