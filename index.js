@@ -44,5 +44,5 @@ function renderOuter (radius, time, fill, mask) {
 }
 
 function curve (value) {
-  return bezier(0.10, 0.45, 0.9, 0.45).get(value)
+  return bezier(0, 0.5, 1, 0.5).get(value)
 }
