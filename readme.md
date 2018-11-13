@@ -1,4 +1,4 @@
-# circle-bounce [![Build Status](https://travis-ci.org/bendrucker/circle-bounce.svg?branch=master)](https://travis-ci.org/bendrucker/circle-bounce)
+# circle-bounce [![Build Status](https://travis-ci.org/bendrucker/circle-bounce.svg?branch=master)](https://travis-ci.org/bendrucker/circle-bounce) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/circle-bounce.svg)](https://greenkeeper.io/)
 
 > Bouncing circle animation
 
